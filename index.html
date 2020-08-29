@@ -23,7 +23,7 @@
                     <a class="nav-link main-color-grey" href="#section_skills">Skills <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link main-color-grey" href="#">Projects</a>
+                    <a class="nav-link main-color-grey" href="#section_projects">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link main-color-grey" href="#">Contact</a>
@@ -35,7 +35,7 @@
 
     <!--Section: Cover-->
     <section class="main-bg-white" id="section_cover">
-        <div class="container">
+        <div class="container container-padding">
             <div class="row main-color-black">
                 <div class="col-4">
                     <img src="./img/profile-pic-11.png" alt="profile-picture">
@@ -48,13 +48,11 @@
             </div>
 
         </div>
-        
-
+        <img src="./img/mountain-10.png" id="mountain" alt="">
     </section>
     <!--Section: Skills-->
     <section id="section_skills" class="main-bg-black">
-        <img src="./img/mountain-10.png" id="mountain" alt="">
-        <div class="container">
+        <div class="container container-padding">
             <h1 class="main-color-light-blue">Skills</h1>
             <div class="row">
                 <div class="col-3">
@@ -77,6 +75,46 @@
         </div>
         
 
+    </section>
+    <!--Section: Projects-->
+    <section id="section_projects" class="main-bg-light-blue">
+        <div class="container container-padding">
+            <h1 class="main-color-black">Projects</h1>
+            <div class="imgContainer">
+                <div class="imgblock-big">
+                    <button>
+                        <img src="./img/project-wedding-card.jpg" alt="project-wedding-card">
+                    </button>
+                </div>
+                <div class="imgblock-small">
+                    <button>
+                        <img src="./img/project-qin.jpg" alt="project-qin">
+                    </button>
+                    
+                </div>
+                <div class="imgblock-small">
+                    <button>
+                        <img src="./img/project-chat-app.jpg" alt="project-chat-app">
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section: Contact-->
+    <section id="section_contact" class="main-bg-grey">
+        <div class="container container-padding">
+            <h1 class="main-color-white">Contact</h1>
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <label for="email">Email</label>
+                <input type="text" id="email">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </form>
+        </div>
     </section>
 
 
