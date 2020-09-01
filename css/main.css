@@ -5,9 +5,9 @@
     --main-black: #393B44;
 }
 
-* {
+/* * {
     border: 1px black solid;
-}
+} */
 
 html, body {
     padding: 0px;
@@ -110,36 +110,56 @@ section#section_skills .container .row .col-3 i {
 section#section_projects .container .imgContainer {
     padding: 50px;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px 200px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 250px;
     grid-gap: 10px;
+    
 }
 
 section#section_projects .container .imgContainer .imgblock-big {
-    grid-column: 1 / 8;
+    grid-column: 1 / 3;
     grid-row: 1 / 3;
+    overflow: hidden;
 }
 
 section#section_projects .container .imgContainer .imgblock-small {
-    grid-column: 8 / 12;
-}
+    grid-column: 3 / 4;
+    overflow: hidden;
 
+}
+section#section_projects .container .imgContainer button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0%;
+    position: relative;
+}
 section#section_projects .container .imgContainer img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 0.3s;
+    margin-left: auto;
 }
 
 section#section_projects .container .imgContainer img:hover {
-    width: 130%;
-    height: 130%;
+    width: 110%;
+    height: 110%;
     object-fit: cover;
+    opacity: 0.8;
     transition: 0.3s;
 }
 
-section#section_projects button {
-    border: none;
-    outline: none;
-    background: none;
+.main-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.main-form {
+    display: flex;
+    flex-direction: column;
 }
